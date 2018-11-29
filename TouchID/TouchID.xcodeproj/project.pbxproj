@@ -12,6 +12,7 @@
 		DE4A921A21B032AC00737E06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4A921821B032AC00737E06 /* Main.storyboard */; };
 		DE4A921C21B032AD00737E06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE4A921B21B032AD00737E06 /* Assets.xcassets */; };
 		DE4A921F21B032AD00737E06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE4A921D21B032AD00737E06 /* LaunchScreen.storyboard */; };
+		DE4A922721B03D3200737E06 /* TouchIDFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4A922621B03D3200737E06 /* TouchIDFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DE4A921B21B032AD00737E06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE4A921E21B032AD00737E06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE4A922021B032AD00737E06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE4A922621B03D3200737E06 /* TouchIDFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchIDFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DE4A921B21B032AD00737E06 /* Assets.xcassets */,
 				DE4A921D21B032AD00737E06 /* LaunchScreen.storyboard */,
 				DE4A922021B032AD00737E06 /* Info.plist */,
+				DE4A922621B03D3200737E06 /* TouchIDFacade.swift */,
 			);
 			path = TouchID;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4A922721B03D3200737E06 /* TouchIDFacade.swift in Sources */,
 				DE4A921721B032AC00737E06 /* ViewController.swift in Sources */,
 				DE4A921521B032AC00737E06 /* AppDelegate.swift in Sources */,
 			);
@@ -285,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9B6M85MQ7J;
 				INFOPLIST_FILE = TouchID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9B6M85MQ7J;
 				INFOPLIST_FILE = TouchID/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
