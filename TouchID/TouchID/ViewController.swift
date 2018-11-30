@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet fileprivate weak var resultLabel: UILabel!
-    
+    @IBOutlet fileprivate weak var textFieldForValid: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -31,5 +32,15 @@ class ViewController: UIViewController {
             }
         }
     }
+
+    @IBAction func validate(_ sender: Any) {
+        resultLabel.text = String(isValidPassword(textForValid: textFieldForValid.text!))
+    }
+
+    fileprivate func isValidPassword(textForValid text: String) -> Bool {
+        let passwordRegex = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{5,}$"
+        return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: text)
+    }
+
 }
 
